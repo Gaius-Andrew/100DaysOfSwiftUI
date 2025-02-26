@@ -70,4 +70,57 @@ let reversedPresidents = presidents.reversed()
 
 
 
+/*
+*****************************************************
+   Part 2: How to Store and find data in dictionaries
+*****************************************************
+ */
 
+var employee = ["Elon Musk", "CEO", "Austin"]
+// infomation for the employee
+// employee[0] - name
+//employee[1] - job title
+//employee[2] - location
+
+print("Name:  \(employee[0])")
+print( "Job Title: \(employee[1])")
+print("Location: \(employee[2])")
+// We canot be sure [2] is actually location or something else or if it actually exists
+// We can use dictionaries instead so that we can decide HOW we store our data
+
+let employee2 = ["Name": "Elon Musk", "Job Title": "CEO", "Location": "Austin" ]
+
+print(employee2["Name", default: "Unknown"])
+print(employee2["Job Title", default: "Unknown"])
+print(employee2["Location", default: "Unknown"])
+print(employee2["Password", default: "Unknown"])
+
+
+let hasGraduated = [
+    "Eric": false,
+    "Maeve": true,
+    "Otis": false
+]
+
+let olympics = [
+    2012: "London",
+    2016: "Rio de Janeiro",
+    2021: "Tokyo"
+]
+
+print(olympics[2012, default: "Uknown"])
+
+
+var heights = [String: Int] ()
+heights["Yao Ming"] = 229
+heights["Shaquille O'Neil"] = 216
+heights["Lebron James"] = 206
+
+
+var archEnemies = [String: String]()
+archEnemies["Batman"] = "The Joker"
+archEnemies["Superan"] = "Lex Luthor"
+
+archEnemies["Batman"] = "Penguin" // overwrites batman enemy
+
+    

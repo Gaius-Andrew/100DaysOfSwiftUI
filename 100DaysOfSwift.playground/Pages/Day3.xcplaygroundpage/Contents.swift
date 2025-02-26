@@ -150,3 +150,32 @@ Cars.insert("Ford")
 print(Cars)
 
 
+/*
+*****************************************************
+   Part 4: Create and use Enums
+*****************************************************
+ */
+// short for enumeration
+// very efficient and safe to use
+
+enum Weekday {
+    case Monday
+    case Tuesday
+    case Wednesday
+    case Thursday
+    case Friday
+}
+var day = Weekday.Monday
+day = .Tuesday
+day = .Friday
+
+enum Months {
+    case January, February, March, April, May, June, July, August, September, October, November, December
+}
+var month = Months.February
+month = .January
+month = .February
+day = .Wednesday
+
+
+

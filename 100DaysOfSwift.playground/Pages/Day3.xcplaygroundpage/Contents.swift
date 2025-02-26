@@ -124,3 +124,29 @@ archEnemies["Superan"] = "Lex Luthor"
 archEnemies["Batman"] = "Penguin" // overwrites batman enemy
 
     
+/*
+*****************************************************
+   Part 3: Use sets for fast data lookup
+*****************************************************
+ */
+
+// Sets cannot store duplicate arrays nor can it order it the way you want it to be ordered
+// Not storing duplicates is sometimes better, also sets set the data in a highly optimized order that makes it very fast to locate items
+let actors = Set([
+    "Denzel Washington",
+    "Tom Cruise",
+    "Nicolas Cage",
+    "Samuel L Jackson"
+])
+
+print(actors)
+
+var Cars = Set<String>()
+Cars.insert("BMW")
+Cars.insert("Audi")
+Cars.insert("Mercedes Benz")
+Cars.insert("Ford")
+
+print(Cars)
+
+

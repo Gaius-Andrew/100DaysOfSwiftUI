@@ -87,6 +87,8 @@ print(username)
 /// this is very helpful that it can figure out what we are trying to store
 /// But sometimes it is also possible to use type annotation to force a particular type especially when you are not storing data just yet and swift does not know yet. so you can force it to store a specific way so when the data comes in Swift knows how it is supposed to be stored
 ///
+///
 /// 
+///
 
 

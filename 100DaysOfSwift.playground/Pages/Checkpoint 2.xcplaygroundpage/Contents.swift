@@ -6,7 +6,7 @@ import Foundation
 /// - Create an array of strings, then write some code that prints the number of items in the array and also the number of unique items in the array
 
 // Create an array
-let albums = [String]()
+var albums = [String]()
 
 albums = [
     "Whole Heart",
@@ -23,10 +23,10 @@ albums = [
     "Beat the Block Up",
     "Holy Flow",
     "Coma",
-    "Lift me Up"
+    "Lift Me Up"
 ]
 
-print([albums])
+print(albums)
 
 // Print the number of items in the album
 print("There are \(albums.count) albums stored in this array!!" )
